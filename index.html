@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Literary Canvas | Where Words Become Worlds</title>
+
+  <meta name="description"
+        content="Literary Canvas — poetry, stories, essays and reflections.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f8f5ef;
+      color: #29251f;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 25px 8%;
+      border-bottom: 1px solid #ddd5ca;
+      background: #f8f5ef;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #6d4932;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: #29251f;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #9a6542;
+    }
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      padding: 80px 8%;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #9a6542;
+      letter-spacing: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(60px, 10vw, 120px);
+      line-height: .9;
+      font-weight: normal;
+    }
+
+    h1 em {
+      color: #9a6542;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 40px 0;
+      font-size: 20px;
+      color: #6f685f;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      background: #29251f;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .button:hover {
+      background: #9a6542;
+    }
+
+    section {
+      padding: 100px 8%;
+      border-top: 1px solid #ddd5ca;
+    }
+
+    .section-title {
+      font-size: 55px;
+      font-weight: normal;
+      margin-bottom: 50px;
+    }
+
+    .featured {
+      background: white;
+      padding: 55px;
+      max-width: 900px;
+      border: 1px solid #ddd5ca;
+    }
+
+    .category {
+      color: #9a6542;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .featured h3 {
+      font-size: 48px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .featured p {
+      color: #6f685f;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .read {
+      color: #9a6542;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      padding: 35px;
+      background: white;
+      border: 1px solid #ddd5ca;
+      min-height: 250px;
+    }
+
+    .card h3 {
+      font-size: 35px;
+      font-weight: normal;
+      margin: 25px 0 15px;
+    }
+
+    .card p {
+      color: #6f685f;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .about p {
+      font-size: 20px;
+      color: #6f685f;
+    }
+
+    footer {
+      padding: 60px 8% 30px;
+      border-top: 1px solid #ddd5ca;
+    }
+
+    footer p {
+      color: #777;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 750px) {
+
+      nav {
+        display: block;
+      }
+
+      nav a {
+        display: none;
+      }
+
+      .hero {
+        min-height: 550px;
+      }
+
+      .featured {
+        padding: 30px;
+      }
+
+      .featured h3 {
+        font-size: 38px;
+      }
+
+      .cards,
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Literary Canvas</div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#poetry">Poetry</a>
+      <a href="#stories">Stories</a>
+      <a href="#essays">Essays</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <div class="eyebrow">LITERARY CANVAS</div>
+
+      <h1>
+        Where words<br>
+        <em>become worlds.</em>
+      </h1>
+
+      <p class="intro">
+        A quiet corner for poetry, stories, reflections,
+        and the beautiful things that live between the lines.
+      </p>
+
+      <a href="#featured" class="button">
+        Explore the writing
+      </a>
+
+    </div>
+  </section>
+
+
+  <section id="featured">
+
+    <div class="eyebrow">FEATURED WRITING</div>
+
+    <h2 class="section-title">
+      A thought worth lingering over.
+    </h2>
+
+    <article class="featured">
+
+      <div class="category">Reflection</div>
+
+      <h3>The Spaces Between Words</h3>
+
+      <p>
+        Sometimes the most meaningful things are not spoken.
+        They exist quietly between one sentence and the next,
+        waiting to be noticed.
+      </p>
+
+      <a class="read" href="#read">
+        Read the piece →
+      </a>
+
+    </article>
+
+  </section>
+
+
+  <section>
+
+    <div class="eyebrow">EXPLORE</div>
+
+    <h2 class="section-title">
+      Choose your journey.
+    </h2>
+
+    <div class="cards">
+
+      <article class="card" id="poetry">
+        <div class="category">01</div>
+        <h3>Poetry</h3>
+        <p>
+          Verses, emotions, moments and words
+          that ask to be felt.
+        </p>
+      </article>
+
+      <article class="card" id="stories">
+        <div class="category">02</div>
+        <h3>Stories</h3>
+        <p>
+          Fiction, memories and imagined worlds
+          waiting to unfold.
+        </p>
+      </article>
+
+      <article class="card" id="essays">
+        <div class="category">03</div>
+        <h3>Essays</h3>
+        <p>
+          Thoughts, observations and reflections
+          on life and everything around it.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <section id="about">
+
+    <div class="about">
+
+      <div>
+        <div class="eyebrow">ABOUT</div>
+
+        <h2 class="section-title">
+          A canvas for words.
+        </h2>
+      </div>
+
+      <div>
+        <p>
+          Literary Canvas is a space dedicated to the art
+          of writing — a place where stories can breathe,
+          poems can wander, and thoughts can find their words.
+        </p>
+
+        <br>
+
+        <p>
+          Welcome to a world created one sentence at a time.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="logo">Literary Canvas</div>
+
+  <p>
+    Where words become worlds.
+  </p>
+
+  <p>
+    © 2026 Literary Canvas · shipra.au
+  </p>
+
+</footer>
+
+</body>
+</html>
